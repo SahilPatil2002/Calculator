@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/calculator.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="container">
         <div class="main-body">
-            
+            <!-- display the output of Calculator -->
+            <div class="display-box">
+                <input type="text" name="" id="input" >
+            </div>
+            <!-- end of display  -->
+
+
+            <!-- the working buttons of Calculator -->
+            <div class="btn-box">
+                <div class="box1">
+                    <button class="btn" onclick="clr()" value=""><i class="a fa-solid fa-c"></i></button>
+                    <button class="btn" onclick="del()" value=""><i class="a fa-solid fa-delete-left"></i></button>
+                    <button class="btn" onclick="dis('%')" value=""><i class="a fa-solid fa-percent"></i></button>
+                    <button class="btn" onclick="dis('/')" value=""><i class="a fa-solid fa-divide"></i></button>
+                    <button class="btn" onclick="dis('1')" value="1"><i class="fa-solid fa-1 white"></i></button>
+                    <button class="btn" onclick="dis('2')" value="2"><i class="fa-solid fa-2 white"></i></button>
+                    <button class="btn" onclick="dis('3')" value="2"><i class="fa-solid fa-3 white"></i></button>
+                    <button class="btn" onclick="dis('*')" value=""><i class="a fa-solid fa-xmark"></i></button>
+                    <button class="btn" onclick="dis('4')" value=""><i class="fa-solid fa-4 white"></i></button>
+                    <button class="btn" onclick="dis('5')" value=""><i class="fa-solid fa-5 white"></i></button>
+                    <button class="btn" onclick="dis('6')" value=""><i class="fa-solid fa-6 white"></i></button>
+                    <button class="btn" onclick="dis('-')" value=""><i class="a fa-solid fa-minus"></i></button>
+                    <button class="btn" onclick="dis('7')" value=""><i class="fa-solid fa-7 white"></i></button>
+                    <button class="btn" onclick="dis('8')" value=""><i class="fa-solid fa-8 white"></i></button>
+                    <button class="btn" onclick="dis('9')" value=""><i class="fa-solid fa-9 white"></i></button>
+                    <button class="btn" onclick="dis('+')" value=""><i class="a fa-solid fa-plus"></i></button>
+                </div>
+                <div class="box2">
+                    <button class="btn" onclick="dis('.')" value="."><i class="fa-solid fa-circle dot"></i></button>
+                    <button class="btn" onclick="dis('0')" value=""><i class="fa-solid fa-0 white"></i></button>
+                    <button class="btn" onclick="calculate()" value=""><i class="fa-solid fa-equals orange"></i></button>
+                </div>
+            </div>
+            <!-- end of the buttons -->
         </div>
     </div>
 </body>
+
 </html>
